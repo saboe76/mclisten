@@ -51,6 +51,7 @@ int main(int argc, char* argv[]) {
 	mcast_group.sin_port = htons(port);
 	mcast_group.sin_addr.s_addr = inet_addr(argv[1]);
 
+
 	if ((recv_s=socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
 		perror ("socket");
 		exit(1);
