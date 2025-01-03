@@ -85,7 +85,7 @@ int main(int argc, char* argv[]) {
 			exit(1);
 		}
 
-		write(STDOUT_FILENO, message, n);
+		n = write(STDOUT_FILENO, message, n);
 	}
 
 	return 0;
