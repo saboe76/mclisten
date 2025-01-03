@@ -2,5 +2,5 @@
 #
 make clean
 git add .
-git commit -m "$(date +"%F %T")"
+git commit -m "$(date +'%F %T')"
 git push -u origin main
